@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHub | News Aggregator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <h1 class="logo">News<span>Hub.</span></h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#news">Latest News</a>
+            <a href="#categories">Categories</a>
+            <a href="#favorites">Favorites</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <p class="tagline">YOUR WORLD. YOUR NEWS.</p>
+
+        <h2>Stay Informed.<br>
+            <span>Stay Ahead.</span>
+        </h2>
+
+        <p class="description">
+            Get the latest news from different sources
+            and explore everything in one place.
+        </p>
+
+        <form id="searchForm" class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for news..."
+            >
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <h2>Explore Categories</h2>
+
+        <div class="category-list">
+            <button class="category active" data-category="All">All News</button>
+            <button class="category" data-category="Technology">Technology</button>
+            <button class="category" data-category="Business">Business</button>
+            <button class="category" data-category="Sports">Sports</button>
+            <button class="category" data-category="Science">Science</button>
+            <button class="category" data-category="Health">Health</button>
+            <button class="category" data-category="Politics">Politics</button>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news-section" id="news">
+        <div class="section-heading">
+            <div>
+                <p class="tagline">HANDPICKED FOR YOU</p>
+                <h2>Latest Headlines</h2>
+            </div>
+            <span id="resultCount"></span>
+        </div>
+
+        <div class="news-grid" id="newsGrid"></div>
+    </section>
+
+    <!-- Favorites -->
+    <section class="favorites-section" id="favorites">
+        <h2>Your Favorite News ♥</h2>
+        <div class="news-grid" id="favoritesGrid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>NewsHub.</h2>
+        <p>Your daily destination for news from around the world.</p>
+        <p>© 2026 NewsHub. Student Project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
